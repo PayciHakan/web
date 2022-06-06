@@ -2,14 +2,13 @@
 
 {%for ar in arizalar%}
 
-
 <div class="card text-center mt-3">
     <div class="card-header">
         {{ar.gelenKonu}}
     </div>
     <div class="card-body">
       <p class="card-text">{{ar.gelenAciklama|safe|slice:"0:200"}}.......</p>
-      <hr>
+      <hr>  
       <p class="card-text">Kimden: {{ar.gelenAdSoyad}}</p>
       <p class="card-text">Mail: {{ar.gelenMail}}</p>
       <p class="card-text">Telefon: {{ar.gelenTelefon}} </p>
